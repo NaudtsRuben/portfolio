@@ -1,27 +1,92 @@
-
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['home']">Home</a>
-      <a mat-list-item [routerLink]="['resume']">CV</a>
-      <a mat-list-item [routerLink]="['projects']">Projecten</a>
-      <a mat-list-item [routerLink]="['contact']">Contact</a>
+      <a mat-list-item [routerLink]="['home']">{{ "home" | translate }}</a>
+      <a mat-list-item href="{{getCV()}}" download="RubenNaudts.pdf">{{ "cv" | translate }}</a>
+      <a mat-list-item [routerLink]="['projects']">{{
+        "projects" | translate
+      }}</a>
+      <a mat-list-item [routerLink]="['contact']">{{
+        "contact" | translate
+      }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-    </mat-toolbar>
-    <ng-content></ng-content>
+    <div class="page-container">
+      <div class="content-wrap">
+        <mat-toolbar color="primary">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async"
+          >
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          <span class="form-inline">
+            <select
+              class="form-control"
+              #selectedLang
+              (change)="switchLang(selectedLang.value)"
+            >
+              <option
+                *ngFor="let language of translate.getLangs()"
+                [value]="language"
+                [selected]="language === translate.currentLang"
+              >
+                {{ language }}
+              </option>
+            </select>
+          </span>
+        </mat-toolbar>
+        
+        <ng-content></ng-content>
+      </div>
+      <footer>
+        <button
+          mat-fab
+          onclick="window.open('https://www.linkedin.com/in/ruben-naudts/', '_blank')"
+        >
+          <img
+            src="https://img.icons8.com/material/24/000000/linkedin--v1.png"
+          />
+        </button>
+
+        <button
+          mat-fab
+          onclick="window.open('https://github.com/NaudtsRuben', '_blank')"
+        >
+          <img
+            src="https://img.icons8.com/material-sharp/24/000000/github.png"
+          />
+        </button>
+
+        <button
+          mat-fab
+          onclick="window.open('https://stackoverflow.com/users/13221322/ruben-naudts', '_blank')"
+        >
+          <img
+            src="https://img.icons8.com/material/24/000000/stackoverflow.png"
+          />
+        </button>
+        <button
+          mat-fab
+          onclick="location.href='mailto:naudtsruben@live.be'"
+        >
+          <img
+            src="https://img.icons8.com/material/24/000000/important-mail.png"
+          />
+        </button>
+      </footer>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

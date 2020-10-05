@@ -1,3 +1,20 @@
 {
-    "test": "Nederlands werkt"
+    "test": "Nederlands werkt",
+
+    "home": "Ruben Naudts",
+    "cv": "CV",
+    "projects": "Projecten",
+    "contact": "Contact",
+
+    "about": "Over Ruben Naudts",
+    "who": "Wie is Ruben?",
+    "whoParagraph": "Ik ben een tweedejaarsstudent toegepaste informatica die steeds op zoek is naar nieuwe manieren om mezelf te verbeteren en problemen op te lossen. Mijn voornaamste interesses zijn Object Georiënteerd programmeren en full stack web development.",
+    "drives": "Wat motiveert hem?",
+    "drivesParagraph": "Doorheen mijn jeugd ben ik altijd al trots geweest op mijn capaciteiten om razendsnel bij te leren en mezelf aan te passen. Nu gebruik ik deze kwaliteiten om continu mijn vaardigheden, en daarbij ook mijn werk, te verbeteren. Hierdoor geloof ik dat er voor alle problemen oplossingen bestaan en geef ik zelden op wanneer ik moeilijkheden ervaar.",
+
+    "cvDownload": "Klik om cv te downloaden",
+
+    "contactMe": "Contacteer me!",
+    "contactMeText": "Heb je een vraag of wil je samenwerken? Je kan me gemakkelijk bereiken via LinkedIn of mail."
+
 }

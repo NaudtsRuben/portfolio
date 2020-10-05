@@ -4,6 +4,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatNavList, MatListModule } from '@angular/material/list';
 import { MatIconModule, MatIcon } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,13 +17,19 @@ import { MatIconModule, MatIcon } from '@angular/material/icon';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   exports:[
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

@@ -1,15 +1,4 @@
-<span class="form-inline" style="float: right;">
-  <select 
-      class="form-control" 
-      #selectedLang 
-      (change)="switchLang(selectedLang.value)">
-    <option *ngFor="let language of translate.getLangs()" 
-      [value]="language"
-      [selected]="language === translate.currentLang">
-      {{ language }}
-    </option>
-  </select>
-</span>
+
 <app-main-nav>
   <router-outlet></router-outlet>
 </app-main-nav>

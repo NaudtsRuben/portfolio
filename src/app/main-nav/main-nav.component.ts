@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-nav',
@@ -16,6 +17,19 @@ export class MainNavComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, public translate: TranslateService){
+    translate.addLangs(['en', 'nl']);
+    translate.setDefaultLang('en');}
 
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
+
+  getCV():string{
+    if(this.translate.currentLang){
+      return "../../assets/resumes/" + this.translate.currentLang + ".pdf";
+    }
+    
+    return "../../assets/resumes/en.pdf";
+  }
 }

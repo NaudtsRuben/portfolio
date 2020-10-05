@@ -1,0 +1,19 @@
+mat-card{
+    width: fit-content;
+    margin: 1em;
+    background-color: rgba(112, 128, 144, 0.568);
+}
+
+a{
+    text-decoration: none;
+}
+
+.col-sm{
+    display: flex;
+    justify-content: center;
+}
+
+mat-card:hover{
+    background-color: lightslategray;
+    transition: .5s;
+}
