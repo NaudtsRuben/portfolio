@@ -2,7 +2,7 @@
     "test": "English works",
 
     "home": "Ruben Naudts",
-    "cv": "CV",
+    "cv": "Download CV",
     "projects": "Projects",
     "contact": "Contact",
 
@@ -10,9 +10,7 @@
     "who": "Who is Ruben?",
     "whoParagraph": "I am a second year student Applied Informatics who keeps looking for new and original ways to solve problems and improve himself. My main interests are Object Oriented Programming and full stack Web Development.",
     "drives": "What drives him?",
-    "drivesParagraph": "Throughout my youth, I have always been proud of my ability to learn and adapt quickly. Now I aim to use those abilities to continuously keep improving my skills, and thus also my work. Because of this I believe all problems can be solved and I hardly give up when facing them.",
-
-    "cvDownload": "Click to dowload resume",
+    "drivesParagraph": "Throughout my youth, I have always been proud of my ability to learn and adapt quickly. Now I aim to use those abilities to continuously keep improving my skills, and thus also my work. Because of this I believe all problems can be solved and I don't give up when facing them.",
 
     "contactMe": "Contact me!",
     "contactMeText": "Have a question or want to work together? You can easily contact me using LinkedIn or by mail."
