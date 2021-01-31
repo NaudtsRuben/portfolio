@@ -13,6 +13,13 @@
     "drivesParagraph": "Doorheen mijn jeugd ben ik altijd al trots geweest op mijn capaciteiten om razendsnel bij te leren en mezelf aan te passen. Nu gebruik ik deze kwaliteiten om continu mijn vaardigheden, en daarbij ook mijn werk, te verbeteren. Hierdoor geloof ik dat er voor alle problemen oplossingen bestaan en geef ik niet op wanneer ik moeilijkheden ervaar.",
 
     "contactMe": "Contacteer mij!",
-    "contactMeText": "Heb je een vraag of wil je samenwerken? Je kan me gemakkelijk bereiken via LinkedIn of mail."
+    "contactMeText": "Heb je een vraag of wil je samenwerken? Je kan me gemakkelijk bereiken via LinkedIn of mail.",
+
+    "download": "Download",
+    "newTab": "Open in een nieuw tabblad",
+
+    "damienExperienceDescription": "Damien Experience is een wandelevenement georganiseerd door de Damiaanactie. Het bestaat uit een website waar men zich kan inschrijven voor een wandelroute. Daarbij kan men ook real-time wandelaars volgen. Hierbij is er ook een android applicatie waarmee de wandelaar de route kan volgen en huidige positie kan doorgeven.",
+    "itLabDescription": "Een Java applicatie voor het beheren en een website voor het bekijken van sessies georganiseerd door het HoGent IT-Lab.",
+    "tools4GentryDescription": "Tools4Gentry is een Magic, the Gathering deckbuilding tool. Deze deckbuilder is specifiek bedoeld voor het formaat 'Gentry'."
 
 }

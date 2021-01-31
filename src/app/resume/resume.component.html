@@ -1,9 +1,19 @@
 <div class="container">
-<pdf-viewer class="pdf"
-  [src]=CV
-  [render-text]="true"
-  [fit-to-page]="true"
-  style="display: block;"
-  
-></pdf-viewer>
+  <div class="button-bar">
+    <button mat-raised-button color="primary" (click)="openCV()">
+      {{ "newTab" | translate }}
+    </button>
+    <a download="RubenNaudts.pdf" href="{{ CV }}"
+      ><button mat-raised-button color="primary">
+        {{ "download" | translate }}
+      </button></a
+    >
+  </div>
+  <pdf-viewer
+    class="pdf"
+    [src]="CV"
+    [render-text]="true"
+    [fit-to-page]="true"
+    style="display: block"
+  ></pdf-viewer>
 </div>

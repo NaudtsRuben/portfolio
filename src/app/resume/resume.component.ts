@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(private breakpointObserver: BreakpointObserver, public translate: TranslateService) { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
   }
@@ -20,5 +20,9 @@ export class ResumeComponent implements OnInit {
     }
     
     return "../../assets/resumes/en.pdf";
+  }
+
+  openCV(){
+    window.open(this.CV)
   }
 }

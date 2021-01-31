@@ -13,6 +13,14 @@
     "drivesParagraph": "Throughout my youth, I have always been proud of my ability to learn and adapt quickly. Now I aim to use those abilities to continuously keep improving my skills, and thus also my work. Because of this I believe all problems can be solved and I don't give up when facing them.",
 
     "contactMe": "Contact me!",
-    "contactMeText": "Have a question or want to work together? You can easily contact me using LinkedIn or by mail."
+    "contactMeText": "Have a question or want to work together? You can easily contact me using LinkedIn or by mail.",
 
+    "download": "Download",
+    "newTab": "Open in new tab",
+
+    "damienExperienceDescription": "Damien Experience is a walking event organised by Foundation Damien. The project consists of a website where participants can register and where people can follow the participants during the event in real-time. In addition, there is also an android application which the participant uses to follow the route and update his position.",
+    "itLabDescription": "A Java application to manage sessions for the HoGent IT-Lab. In addition there is also a website where participants can register for these sessions.",
+    "tools4GentryDescription": "A Magic, the Gathering deckbuilding tool. This tool is specifically meant for the format 'Gentry'."
+
+    
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
@@ -18,7 +19,7 @@ export class ProjectsComponent implements OnInit {
         { url: '../../assets/images/Damien_experience/finished_registration_select_1.png' },
         { url: '../../assets/images/Damien_experience/finished_track_user_web.png' },
     ],
-      description: 'Damien Experience is een wandelevenement georganiseerd door de Damiaanactie. Hierbij heb ik meegewerkt aan de website waar men zich kan inschrijven en real-time wandelaars kan volgen. Samen met de android applicatie waarmee de wandelaar de route kan volgen en zijn afgelegde route ook steeds geupdate wordt.',
+      description: 'damienExperienceDescription',
       tags: ['Angular', '.NET', 'MongoDB', 'Android', 'Kotlin']
     },
     {
@@ -30,8 +31,8 @@ export class ProjectsComponent implements OnInit {
         { url: '../../assets/images/itLab/ItLab_java_home.png' },
         { url: '../../assets/images/itLab/ItLab_java_sessie.png' },
     ],
-      description: 'Een Java applicatie voor het beheren en een website voor het bekijken van sessies georganiseerd door het HOGent IT-Lab.',
-      tags: ['ASP.NET', 'Java', 'SQL Server']
+      description: 'itLabDescription',
+      tags: ['ASP.NET', 'Java', 'JavaFX','SQL Server']
     },
     {
       title: 'Tools4Gentry',
@@ -40,14 +41,17 @@ export class ProjectsComponent implements OnInit {
         { url: '../../assets/images/tools4Gentry/add_deck.png' },
         { url: '../../assets/images/tools4Gentry/add_deck2.png' },
     ],
-      description: 'Tools4Gentry is een Magic, the Gathering deckbuilder. Deze deckbuilder is specifiek bedoeld voor het format "Gentry".',
+      description: 'tools4GentryDescription',
       tags: ['Angular', '.NET', 'SQL Server']
     },
   ];
 
-  constructor() { }
+  constructor(public translate: TranslateService) { 
+    console.log(this.translate.instant('tools4GentryDescription'))
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
