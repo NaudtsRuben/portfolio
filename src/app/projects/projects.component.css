@@ -5,6 +5,9 @@ h1{
   margin-top: 3em;
 }
 
+.images{
+  margin: .5rem;
+}
 
 mat-card {
   max-width: 80%;
@@ -13,7 +16,10 @@ mat-card {
   margin-bottom: 5rem;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+.description{
+  margin: .5rem;
+}
+
+.tag{
+  margin: .5rem;
 }

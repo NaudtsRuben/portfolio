@@ -1,27 +1,32 @@
 <mat-card *ngFor="let project of projects">
   <mat-card-header>
-    <mat-card-title
-      >{{
-        project.title
-      }}</mat-card-title
-    >
+    <mat-card-title>
+      <h3>
+        {{ project.title }}
+      </h3>
+    </mat-card-title>
   </mat-card-header>
-  <mat-carousel [autoplay]="false" [hideArrows]="false"  [maintainAspectRatio]="false" slideHeight="75vh">
-    <mat-carousel-slide
-      *ngFor="let image of project.images"
-      image="{{ image.url }}"
-      [hideOverlay]='true'
-    ></mat-carousel-slide>
-  </mat-carousel>
 
   <mat-card-content>
-    <p>
+    <div class="images">
+    <mat-carousel [autoplay]="false" [hideArrows]="false" proportion=55>
+      <mat-carousel-slide
+        *ngFor="let image of project.images"
+        image="{{ image.url }}"
+        [hideOverlay]="true"
+      ></mat-carousel-slide>
+    </mat-carousel></div>
+
+    <p class="description">
       {{ project.description }}
     </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="primary" *ngFor="let tag of project.tags">
+    <button
+      mat-raised-button
+      color="primary"
+      *ngFor="let tag of project.tags"
+      class="tag"
+    >
       {{ tag }}
     </button>
-  </mat-card-actions>
+  </mat-card-content>
 </mat-card>
