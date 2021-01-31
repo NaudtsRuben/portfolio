@@ -36,6 +36,10 @@ footer{
   padding-bottom: 2.5rem;
 }
 
+footer{
+  height: 2.5rem;
+}
+
 span{
   margin: 1em;
   display: flex;

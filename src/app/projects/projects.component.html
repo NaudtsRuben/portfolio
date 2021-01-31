@@ -1,1 +1,27 @@
-<div class="container"><h1>Under Construction...</h1></div>
+<mat-card *ngFor="let project of projects">
+  <mat-card-header>
+    <mat-card-title
+      >{{
+        project.title
+      }}</mat-card-title
+    >
+  </mat-card-header>
+  <mat-carousel [autoplay]="false" [hideArrows]="false"  [maintainAspectRatio]="false" slideHeight="75vh">
+    <mat-carousel-slide
+      *ngFor="let image of project.images"
+      image="{{ image.url }}"
+      [hideOverlay]='true'
+    ></mat-carousel-slide>
+  </mat-carousel>
+
+  <mat-card-content>
+    <p>
+      {{ project.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" *ngFor="let tag of project.tags">
+      {{ tag }}
+    </button>
+  </mat-card-actions>
+</mat-card>

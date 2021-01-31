@@ -7,6 +7,8 @@ import { MatIconModule, MatIcon } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -20,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCarouselModule.forRoot()
   ],
   exports:[
     MatSidenavModule,
@@ -29,7 +32,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCarouselModule
   ]
 })
 export class MaterialModule { }
