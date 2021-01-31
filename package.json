@@ -32,7 +32,8 @@
     "node-mandrill": "^1.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.14.1",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "pdfjs-dist": "2.5.207"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.3",
