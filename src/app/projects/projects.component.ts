@@ -22,6 +22,18 @@ export class ProjectsComponent implements OnInit {
       tags: ['Angular', '.NET', 'MongoDB', 'Android', 'Kotlin']
     },
     {
+      title: 'IT-Lab management tool',
+      images: [
+        { url: '../../assets/images/itLab/ItLab_home.png' },
+        { url: '../../assets/images/itLab/ItLab_sessiekalender.png' },
+        { url: '../../assets/images/itLab/ItLab_sessie.png' },
+        { url: '../../assets/images/itLab/ItLab_java_home.png' },
+        { url: '../../assets/images/itLab/ItLab_java_sessie.png' },
+    ],
+      description: 'Een Java applicatie voor het beheren en een website voor het bekijken van sessies georganiseerd door het HOGent IT-Lab.',
+      tags: ['ASP.NET', 'Java', 'SQL Server']
+    },
+    {
       title: 'Tools4Gentry',
       images: [
         { url: '../../assets/images/tools4Gentry/tools4Gentry.png' },
@@ -30,7 +42,7 @@ export class ProjectsComponent implements OnInit {
     ],
       description: 'Tools4Gentry is een Magic, the Gathering deckbuilder. Deze deckbuilder is specifiek bedoeld voor het format "Gentry".',
       tags: ['Angular', '.NET', 'SQL Server']
-    }
+    },
   ];
 
   constructor() { }
