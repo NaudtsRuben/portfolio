@@ -25,11 +25,5 @@ export class MainNavComponent {
     this.translate.use(lang);
   }
 
-  getCV():string{
-    if(this.translate.currentLang){
-      return "../../assets/resumes/" + this.translate.currentLang + ".pdf";
-    }
-    
-    return "../../assets/resumes/en.pdf";
-  }
+  
 }

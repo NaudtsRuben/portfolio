@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactComponent,
     ProjectsComponent,
     PageNotFoundComponent,
-    MainNavComponent
+    MainNavComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 
@@ -23,7 +25,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatCardModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
+    PdfViewerModule
   ],
   exports:[
     MatSidenavModule,
@@ -33,7 +36,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatCardModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatCarouselModule
+    MatCarouselModule,
+    PdfViewerModule
   ]
 })
 export class MaterialModule { }

@@ -9,7 +9,7 @@
   >
     <mat-nav-list>
       <a mat-list-item [routerLink]="['home']">{{ "home" | translate }}</a>
-      <a mat-list-item href="{{getCV()}}" download="RubenNaudts.pdf">{{ "cv" | translate }}</a>
+      <a mat-list-item [routerLink]="['resume']">{{ "cv" | translate }}</a>
       <a mat-list-item [routerLink]="['projects']">{{
         "projects" | translate
       }}</a>
