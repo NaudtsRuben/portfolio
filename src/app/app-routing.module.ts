@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: 'projects', component: ProjectsComponent},
   {path: 'resume', component: ResumeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: '*', component: PageNotFoundComponent}
+  {path: 'pageNotFound', component: PageNotFoundComponent},
+  {path: '**', redirectTo: 'pageNotFound', pathMatch: 'full'}
 ];
 
 @NgModule({
