@@ -32,7 +32,7 @@ export class ProjectsComponent implements OnInit {
         { url: '../../assets/images/itLab/ItLab_java_sessie.png' },
     ],
       description: 'itLabDescription',
-      tags: ['ASP.NET', 'Java', 'JavaFX','SQL Server']
+      tags: ['.NET', 'Java', 'JavaFX','SQL Server']
     },
     {
       title: 'Tools4Gentry',
