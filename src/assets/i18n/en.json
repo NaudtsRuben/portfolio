@@ -20,7 +20,7 @@
 
     "damienExperienceDescription": "Damien Experience is a walking event organised by Foundation Damien. The project consists of a website where participants can register and where people can follow the participants during the event in real-time. In addition, there is also an android application which the participant uses to follow the route and update his position.",
     "itLabDescription": "A Java application to manage sessions for the HoGent IT-Lab. In addition there is also a website where participants can register for these sessions.",
-    "tools4GentryDescription": "A Magic, the Gathering deckbuilding tool. This tool is specifically meant for the format 'Gentry'."
+    "tools4GentryDescription": "A Magic, the Gathering deckbuilding tool. This tool is specifically meant for the format 'Gentry'.",
 
-    
+    "lost": "404. Looks like you're lost..."
 }

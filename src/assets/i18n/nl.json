@@ -20,6 +20,8 @@
 
     "damienExperienceDescription": "Damien Experience is een wandelevenement georganiseerd door de Damiaanactie. Het bestaat uit een website waar men zich kan inschrijven voor een wandelroute. Daarbij kan men ook real-time wandelaars volgen. Hierbij is er ook een android applicatie waarmee de wandelaar de route kan volgen en huidige positie kan doorgeven.",
     "itLabDescription": "Een Java applicatie voor het beheren en een website voor het bekijken van sessies georganiseerd door het HoGent IT-Lab.",
-    "tools4GentryDescription": "Tools4Gentry is een Magic, the Gathering deckbuilding tool. Deze deckbuilder is specifiek bedoeld voor het formaat 'Gentry'."
+    "tools4GentryDescription": "Tools4Gentry is een Magic, the Gathering deckbuilding tool. Deze deckbuilder is specifiek bedoeld voor het formaat 'Gentry'.",
+
+    "lost": "404. Het lijkt alsof je verdwaald bent..."
 
 }
