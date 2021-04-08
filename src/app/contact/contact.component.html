@@ -1,23 +1,15 @@
 <br />
-<h1 class="text-center">{{'contactMe' | translate}}</h1>
+<h1 class="text-center">{{ "contactMe" | translate }}</h1>
 <br />
 <div class="text-center">
-  {{'contactMeText'|translate}}
+  {{ "contactMeText" | translate }}
 </div>
 <br />
-<div class="row" style="margin: 1em">
-  <div class="col-sm">
+<div class="buttonContainer">
     <a href="https://www.linkedin.com/in/ruben-naudts/" target="_blank">
-      <mat-card>
-        <mat-card-title> LinkedIn </mat-card-title>
-      </mat-card>
+      <button mat-raised-button color="primary">Linkedin</button>
     </a>
-  </div>
-  <div class="col-sm">
     <a href="mailto:naudtsruben@live.be">
-      <mat-card>
-        <mat-card-title> Email </mat-card-title>
-      </mat-card>
+      <button mat-raised-button color="primary">Email</button>
     </a>
-  </div>
 </div>

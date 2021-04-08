@@ -11,4 +11,9 @@
 button{
     margin: .5rem;
     margin-bottom: 2rem;
+    min-width: 12rem;
+}
+
+button:hover{
+    background-color: darkblue;
 }

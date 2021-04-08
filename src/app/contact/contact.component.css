@@ -8,12 +8,16 @@ a{
     text-decoration: none;
 }
 
-.col-sm{
-    display: flex;
-    justify-content: center;
+.buttonContainer{
+    text-align: center;
 }
 
-mat-card:hover{
-    background-color: lightslategray;
-    transition: .5s;
+button{
+    display: inline-block;
+    margin: 1em;
+    min-width: 7rem;
+}
+
+button:hover{
+    background-color: darkblue;
 }
